@@ -6,12 +6,21 @@ public class state {
     private String symbol;
     private ZonedDateTime startTime;
     private ZonedDateTime endTime;
+    private double prevPrice = 0;
 
     public state() {
     }
 
     public state(String symbol) {
         this.setSymbol(symbol);
+    }
+
+    public double getPrevPrice() {
+        return this.prevPrice;
+    }
+
+    public void setPrevPrice(double prev) {
+        this.prevPrice = prev;
     }
 
     public String getSymbol() {

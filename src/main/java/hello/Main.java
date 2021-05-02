@@ -7,10 +7,11 @@ public class Main {
     String keyID = "PKA2DFJ3IVOA6NGBF50G";
     String secret = "pRKn6W8hPWEzmvv0rx2wmOFwmmZLwVe8MDZAig3I";
     AlpacaAPI alpacaAPI = new AlpacaAPI(keyID, secret);
+    // AlpacaAPI alpacaAPI = new AlpacaAPI();
 
     WsbAlgorithm yolo = new WsbAlgorithm(alpacaAPI);
     yolo.setWsbState(new state("TSLA"));
-    yolo.getBars();
+    yolo.initiate();
   }
 
 }
