@@ -8,8 +8,9 @@ public class Main {
     String secret = "pRKn6W8hPWEzmvv0rx2wmOFwmmZLwVe8MDZAig3I";
     AlpacaAPI alpacaAPI = new AlpacaAPI(keyID, secret);
 
-    AlpacaExamples yeet = new AlpacaExamples(alpacaAPI);
-    yeet.logAccountActivity();
+    WsbAlgorithm yolo = new WsbAlgorithm(alpacaAPI);
+    yolo.setWsbState(new state("TSLA"));
+    yolo.getBars();
   }
 
 }
